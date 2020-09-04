@@ -14,8 +14,8 @@ body {
     width: 100%;
     position: absolute;
     top: 25%;
-    left: 20%;
-    background: rgb(1, 1, 46);
+    left: 10%;
+    /* background: rgb(1, 1, 46); */
 }
 
 .text-field {
@@ -30,6 +30,8 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 3rem;
+    display: flex;
+    width: 100%;
 }
 
 .acceptor {
@@ -52,7 +54,7 @@ label {
     font-size: x-large;
     border-radius: 50px;
     margin-left: 50px;
-    height: 50px;
+    height: 60px;
     margin-top: 20px;
     border: 2px solid rgb(1, 1, 46);
 }
@@ -64,16 +66,17 @@ label {
     margin-top: 10px;
 }
 
-@media (max-width:600px) {
+@media (max-width:640px) {
     .wrapper {
         width: 100%;
         background-size: cover;
+        margin-left: 20px;
     }
-    .text-field {
+    .text-field h1 {
         flex-direction: column;
         width: 100%;
     }
-    .acceptor {
-        width: 100%;
+    .btn {
+        padding-bottom: 20px;
     }
 }
